@@ -4,7 +4,8 @@ This mod allows jump jet range and heat to be affected by either the biome (luna
 
 Currently, the following settings are customizable in the mod.json;
 
-```"Settings": {
+```
+"Settings": {
 			"UsePlanetGravityTags": true,
 			"LunarJumpOverride": 1.2,
 			"MartianJumpOverride": 1.2,
