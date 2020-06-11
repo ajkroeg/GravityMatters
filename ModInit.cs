@@ -34,6 +34,6 @@ namespace GravityMatters
         public float lowgravJumpOverride = 1.2f;
         public float highgravJumpOverride = 0.8f;
         public bool JumpHeatOverrideFlag = false;
-        public float JumpHeatOverrideMultiplier = 0.83f;
+        public float JumpHeatOverrideMultiplier = 1f;
     }
 }
