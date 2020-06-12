@@ -12,7 +12,7 @@ Currently, the following settings are customizable in the mod.json;
 			"lowgravJumpOverride": 1.2,
 			"highgravJumpOverride": 0.8,
 			"JumpHeatOverrideFlag": false,
-			"JumpHeatOverrideMultiplier": 0.83
+			"JumpHeatOverrideMultiplier": 1.0
 			},
    ```
    `UsePlanetGravityTags` - bool, switches whether changes to jumpjets look for biomes or planet tags.
