@@ -44,5 +44,6 @@ namespace GravityMatters
 
         public bool JumpHeatOverrideFlag = false;
         public float JumpHeatOverrideMultiplier = 1f;
+
     }
 }
