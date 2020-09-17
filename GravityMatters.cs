@@ -112,6 +112,10 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.ToString() == "Energy")
+                    {
+                        return;
+                    }
                     foreach (Mech mech in combat.AllMechs)
                     {
                         string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
@@ -175,6 +179,10 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.ToString() == "Energy")
+                    {
+                        return;
+                    }
                     foreach (Mech mech in combat.AllMechs)
                     {
                         string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
@@ -237,6 +245,10 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.ToString() == "Energy")
+                    {
+                        return;
+                    }
                     foreach (Mech mech in combat.AllMechs)
                     {
                         string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
@@ -299,6 +311,10 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.ToString() == "Energy")
+                    {
+                        return;
+                    }
                     foreach (Mech mech in combat.AllMechs)
                     {
                         string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
