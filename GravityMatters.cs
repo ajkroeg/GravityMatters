@@ -116,23 +116,19 @@ namespace GravityMatters
                     {
                         return;
                     }
-                    foreach (Mech mech in combat.AllMechs)
+                    if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.lunarVacuum)
                     {
-                        string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
-                        if (currentMask.Contains("DesignMaskBiomeLunarVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
-                        }
-                        else if (currentMask.Contains("DesignMaskBiomeMartianVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
-                        }
-                        else
-                        {
-                            WeaponRangeMultiplier = 1.0f;
-                        }
-                        __result *= WeaponRangeMultiplier;
+                        WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
                     }
+                    else if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.martianVacuum)
+                    {
+                        WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
+                    }
+                    else
+                    {
+                        WeaponRangeMultiplier = 1.0f;
+                    }
+                    __result *= WeaponRangeMultiplier;
                 }
             }
         }
@@ -179,27 +175,24 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+                    
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
                         return;
                     }
-                    foreach (Mech mech in combat.AllMechs)
+                    if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.lunarVacuum)
                     {
-                        string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
-                        if (currentMask.Contains("DesignMaskBiomeLunarVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
-                        }
-                        else if (currentMask.Contains("DesignMaskBiomeMartianVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
-                        }
-                        else
-                        {
-                            WeaponRangeMultiplier = 1.0f;
-                        }
-                        __result *= WeaponRangeMultiplier;
+                        WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
                     }
+                    else if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.martianVacuum)
+                    {
+                        WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
+                    }
+                    else
+                    {
+                        WeaponRangeMultiplier = 1.0f;
+                    }
+                    __result *= WeaponRangeMultiplier;
                 }
             }
         }
@@ -245,27 +238,24 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
                         return;
                     }
-                    foreach (Mech mech in combat.AllMechs)
+                    if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.lunarVacuum)
                     {
-                        string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
-                        if (currentMask.Contains("DesignMaskBiomeLunarVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
-                        }
-                        else if (currentMask.Contains("DesignMaskBiomeMartianVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
-                        }
-                        else
-                        {
-                            WeaponRangeMultiplier = 1.0f;
-                        }
-                        __result *= WeaponRangeMultiplier;
+                        WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
                     }
+                    else if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.martianVacuum)
+                    {
+                        WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
+                    }
+                    else
+                    {
+                        WeaponRangeMultiplier = 1.0f;
+                    }
+                    __result *= WeaponRangeMultiplier;
                 }
             }
         }
@@ -311,27 +301,24 @@ namespace GravityMatters
                 }
                 else if (ModInit.Settings.UsePlanetGravityTags != true)
                 {
+
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
                         return;
                     }
-                    foreach (Mech mech in combat.AllMechs)
+                    if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.lunarVacuum)
                     {
-                        string currentMask = mech.Combat.MapMetaData.biomeDesignMask.Id;
-                        if (currentMask.Contains("DesignMaskBiomeLunarVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
-                        }
-                        else if (currentMask.Contains("DesignMaskBiomeMartianVacuum"))
-                        {
-                            WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
-                        }
-                        else
-                        {
-                            WeaponRangeMultiplier = 1.0f;
-                        }
-                        __result *= WeaponRangeMultiplier;
+                        WeaponRangeMultiplier = ModInit.Settings.LunarWeaponOverride;
                     }
+                    else if (combat.MapMetaData.biomeSkin == Biome.BIOMESKIN.martianVacuum)
+                    {
+                        WeaponRangeMultiplier = ModInit.Settings.MartianWeaponOverride;
+                    }
+                    else
+                    {
+                        WeaponRangeMultiplier = 1.0f;
+                    }
+                    __result *= WeaponRangeMultiplier;
                 }
             }
         }
