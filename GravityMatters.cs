@@ -22,7 +22,7 @@ namespace GravityMatters
 
             public static void Postfix(Mech __instance, ref float __result)
             {
-                if (ModInit.Settings.UsePlanetGravityTags == true)
+                if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
                     TagSet CurrentSystem = sim.CurSystem.Tags;
                     if (CurrentSystem.Contains("planet_size_small"))
@@ -89,7 +89,7 @@ namespace GravityMatters
 
             public static void Postfix(Weapon __instance, ref float __result)
             {
-                if (ModInit.Settings.UsePlanetGravityTags == true)
+                if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
@@ -110,7 +110,7 @@ namespace GravityMatters
                     }
                     __result *= WeaponRangeMultiplier;
                 }
-                else if (ModInit.Settings.UsePlanetGravityTags != true)
+                else
                 {
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
@@ -152,7 +152,7 @@ namespace GravityMatters
 
             public static void Postfix(Weapon __instance, ref float __result)
             {
-                if (ModInit.Settings.UsePlanetGravityTags == true)
+                if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
@@ -173,7 +173,7 @@ namespace GravityMatters
                     }
                     __result *= WeaponRangeMultiplier;
                 }
-                else if (ModInit.Settings.UsePlanetGravityTags != true)
+                else
                 {
                     
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
@@ -215,7 +215,7 @@ namespace GravityMatters
 
             public static void Postfix(Weapon __instance, ref float __result)
             {
-                if (ModInit.Settings.UsePlanetGravityTags == true)
+                if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
@@ -236,7 +236,7 @@ namespace GravityMatters
                     }
                     __result *= WeaponRangeMultiplier;
                 }
-                else if (ModInit.Settings.UsePlanetGravityTags != true)
+                else
                 {
 
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
@@ -278,7 +278,7 @@ namespace GravityMatters
 
             public static void Postfix(Weapon __instance, ref float __result)
             {
-                if (ModInit.Settings.UsePlanetGravityTags == true)
+                if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
                     {
@@ -299,7 +299,7 @@ namespace GravityMatters
                     }
                     __result *= WeaponRangeMultiplier;
                 }
-                else if (ModInit.Settings.UsePlanetGravityTags != true)
+                else
                 {
 
                     if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
