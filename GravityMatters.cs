@@ -154,7 +154,7 @@ namespace GravityMatters
             {
                 if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
@@ -175,8 +175,8 @@ namespace GravityMatters
                 }
                 else
                 {
-                    
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
@@ -217,7 +217,7 @@ namespace GravityMatters
             {
                 if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
@@ -239,7 +239,7 @@ namespace GravityMatters
                 else
                 {
 
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
@@ -280,7 +280,7 @@ namespace GravityMatters
             {
                 if (ModInit.Settings.UsePlanetGravityTags == true && !combat.ActiveContract.ContractTypeValue.IsSkirmish)
                 {
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
@@ -301,8 +301,7 @@ namespace GravityMatters
                 }
                 else
                 {
-
-                    if (ModInit.Settings.LetGravityAffectEnergyWeps != true && __instance.WeaponCategoryValue.IsEnergy)
+                    if (!ModInit.Settings.LetGravityAffectEnergyWeps && (__instance.WeaponCategoryValue.IsEnergy || __instance.Type == WeaponType.Laser || __instance.Type == WeaponType.PPC || __instance.Type == WeaponType.COIL))
                     {
                         return;
                     }
