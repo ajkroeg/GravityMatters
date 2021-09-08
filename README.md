@@ -40,7 +40,7 @@ Currently, the following settings are customizable in the mod.json;
    
    `lowgravJumpOverride` - float, multiplier for jump distance on planets with `planet_size_small` tag if `UsePlanetGravityTags: true`.
    
-   `highgravJumpOverride` - float, multiplier for jump distance on planets with `planet_size_small` tag if `UsePlanetGravityTags: true`.
+   `highgravJumpOverride` - float, multiplier for jump distance on planets with `planet_size_large` tag if `UsePlanetGravityTags: true`.
    
    
    `LunarWeaponOverride` - float, multiplier for weapon range on lunar maps if `UsePlanetGravityTags: false`.
@@ -49,7 +49,7 @@ Currently, the following settings are customizable in the mod.json;
    
    `lowgravWeaponOverride` - float, multiplier for weapon range on planets with `planet_size_small` tag if `UsePlanetGravityTags: true`.
    
-   `highgravWeaponOverride` - float, multiplier for weapon range on planets with `planet_size_small` tag if `UsePlanetGravityTags: true`.
+   `highgravWeaponOverride` - float, multiplier for weapon range on planets with `planet_size_large` tag if `UsePlanetGravityTags: true`.
    
    
    `JumpHeatOverrideFlag` - bool, switch for whether jump heat generation is overriden and manually specified.
